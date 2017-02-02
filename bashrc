@@ -68,7 +68,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 # 1. Git branch is being showed
 # 2. Title of terminal is changed for each new shell
 # 3. History is appended each time
-export PROMPT_COMMAND='__git_ps1 "\[$(tput setaf 6)\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]" " "; echo -ne "\033]0;${PWD##*/}\007"'
+export PROMPT_COMMAND='__git_ps1 "\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput sgr0)\]" " "; echo -ne "\033]0;${PWD##*/}\007"'
 
 
 # -- History
