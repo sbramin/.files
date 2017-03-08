@@ -27,7 +27,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'unblevable/quick-scope'
 Plug 'klen/python-mode'
-
+Plug 'Valloric/YouCompleteMe'
+Plug 'google/yapf'
 " beta usage. These are plugins I try for a while and if I like them enough
 " I'll move them up
 " Plug 'maralla/completor.vim'
