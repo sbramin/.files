@@ -41,6 +41,8 @@ alias sq='git rebase -i $(git merge-base $(git rev-parse --abbrev-ref HEAD) mast
 
 ###############
 # Exports (custom)
+export GOPATH=~/go
+export GOBIN=$GOPATH/bin
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$GOBIN:$PATH"
 
