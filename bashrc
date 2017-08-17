@@ -43,7 +43,7 @@ alias sq='git rebase -i $(git merge-base $(git rev-parse --abbrev-ref HEAD) mast
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$GOBIN:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$HOME/bin:$GOBIN:$PATH"
 
 export EDITOR="vim"
 
