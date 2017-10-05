@@ -44,3 +44,9 @@
 	smudge = git-media-smudge %f
 [push]
 	default = simple
+[filter "strongbox"]
+	clean = strongbox clean %f
+	smudge = strongbox smudge %f
+	required = true
+[diff "strongbox"]
+	textconv = strongbox diff

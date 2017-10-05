@@ -29,6 +29,8 @@ Plug 'unblevable/quick-scope'
 Plug 'klen/python-mode'
 Plug 'Valloric/YouCompleteMe'
 Plug 'google/yapf'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 " beta usage. These are plugins I try for a while and if I like them enough
 " I'll move them up
 " Plug 'maralla/completor.vim'
@@ -102,6 +104,7 @@ autocmd BufNewFile,BufRead *.ino setlocal noet ts=4 sw=4 sts=4
 autocmd BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4
 autocmd BufNewFile,BufRead *.md setlocal noet ts=4 sw=4
 autocmd BufNewFile,BufRead *.vim setlocal expandtab shiftwidth=2 tabstop=2
+autocmd BufNewFile,BufRead *.js setlocal expandtab shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead *.hcl setlocal expandtab shiftwidth=2 tabstop=2
 
 autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2
@@ -329,14 +332,14 @@ nnoremap <leader>gb :Gblame<CR>
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 let g:go_auto_type_info = 0
 let g:go_echo_command_info= 0
 
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
-let g:go_highlight_extra_types = 0
+let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_addtags_transform = "camelcase"
 
@@ -603,3 +606,5 @@ nmap  -  <Plug>(choosewin)
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " vim: sw=2 sw=2 et
+"
+let g:jsx_ext_required = 0

@@ -1,3 +1,3 @@
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
-sh ~/.files/andrea.i3
+sh ~/.files/lenny.i3
 exec i3
