@@ -329,6 +329,8 @@ vnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gb :Gblame<CR>
 
 " ==================== vim-go ====================
+"
+"set foldmethod=syntax
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1

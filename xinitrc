@@ -1,3 +1,3 @@
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
-sh ~/.files/lenny.i3
+sh ~/.files/lenny/setup
 exec i3
