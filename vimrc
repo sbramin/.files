@@ -31,10 +31,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'google/yapf'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-" beta usage. These are plugins I try for a while and if I like them enough
-" I'll move them up
-" Plug 'maralla/completor.vim'
-
 call plug#end()
 
 "=====================================================
