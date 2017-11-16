@@ -7,6 +7,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$HOM
 
 alias k=kubectl
 alias kpo="k get pods|grep"
+alias kp="k --context=prod-telecom"
 
 ZSH=/usr/share/oh-my-zsh/
 ZSH_THEME="robbyrussell"
