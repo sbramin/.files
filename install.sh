@@ -11,3 +11,4 @@ ln -s ~/.files/gitconfig ~/.gitconfig
 
 # In vim type :PlugInstall
 # Then :GoInstallBinaries
+

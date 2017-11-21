@@ -50,3 +50,7 @@
 	required = true
 [diff "strongbox"]
 	textconv = strongbox diff
+[credential]
+	helper = store
+[url "https://github.com"]
+	insteadOf = git://github.com
