@@ -1,6 +1,6 @@
 [user]
 	name = sbramin
-	email = mail@sbramin.com 
+	email = s@obscurity.xyz
 [alias]
     st = status -sb
     ci = commit
@@ -54,3 +54,5 @@
 	helper = store
 [url "https://github.com"]
 	insteadOf = git://github.com
+[http]
+	cookiefile = /home/sbr/.gitcookies

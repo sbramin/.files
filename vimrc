@@ -1,4 +1,4 @@
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/')
 
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ConradIrwin/vim-bracketed-paste'
@@ -31,6 +31,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'google/yapf'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'wimstefan/vim-artesanal'
 call plug#end()
 
 "=====================================================
@@ -75,6 +76,7 @@ set completeopt=menu,menuone
 set nocursorcolumn           " speed up syntax highlighting
 set nocursorline
 set updatetime=400
+set mmp=2000
 
 set pumheight=10             " Completion window max size
 
@@ -206,9 +208,8 @@ augroup END
 let mapleader = ","
 
 let g:rehash256 = 1
-"set background=dark
-let g:molokai_original = 1
-colorscheme molokai
+set background=light
+colorscheme artesanal
 
 " Some useful quickfix shortcuts for quickfid 
 map <C-n> :cn<CR>
