@@ -1,52 +1,14 @@
 call plug#begin('~/.vim/')
+
 Plug 'fatih/vim-go'
 Plug 'Valloric/YouCompleteMe'
+Plug 'wimstefan/vim-artesanal'
 call plug#end()
 
 let mapleader = ","
 set encoding=utf-8
+
 let g:rehash256 = 1
-
-" Some useful quickfix shortcuts for quickfid 
-map <C-n> :cn<CR>
-map <C-m> :cp<CR>
-
-" put quickfix window always to the bottom
-autocmd FileType qf wincmd J
-
-" Fast saving
-nnoremap <leader>w :w!<cr>
-nnoremap <silent> <leader>q :q!<CR>
-
-" Center the screen
-nnoremap <space> zz
-
-" Remove search highlight
-nnoremap <leader><space> :nohlsearch<CR>
-
-" Source the current Vim file
-nnoremap <leader>pr :Runtime<CR>
-
-" Close all but the current one
-nnoremap <leader>o :only<CR>
-
-nnoremap <F6> :setlocal spell! spell?<CR>
-
-" Do not show stupid q: window
-map q: :q
-
-" Time out on key codes but not mappings.
-" Basically this makes terminal Vim work sanely.
-if !has('gui_running')
-  set notimeout
-  set ttimeout
-  set ttimeoutlen=10
-  augroup FastEscape
-    autocmd!
-    au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=1000
-  augroup END
-endif
 
 " ==================== vim-go ====================
 "
@@ -62,6 +24,7 @@ let g:go_highlight_trailing_whitespace_error = 0
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_addtags_transform = "camelcase"
+
 
 nmap <C-g> :GoDecls<cr>
 imap <C-g> <esc>:<C-u>GoDecls<cr>
@@ -99,3 +62,5 @@ augroup go
   autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
   autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 augroup END
+
+
