@@ -7,6 +7,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
+Plug 'tomasr/molokai'
 call plug#end()
 
 let mapleader = ","
@@ -15,6 +16,11 @@ let g:rehash256 = 1
 
 syntax enable
 set t_Co=256
+
+let g:rehash256 = 1
+set background=dark
+let g:molokai_original = 1
+colorscheme molokai
 
 " Some useful quickfix shortcuts for quickfid 
 map <C-n> :cn<CR>
