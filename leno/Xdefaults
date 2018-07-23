@@ -1,43 +1,17 @@
-Xft.autohint  : 0
-Xft.lcdfilter : lcddefault
-Xft.hintstyle : hintnone
-Xft.hinting   : 0
-Xft.antialias : true
-Xft.rgba      : rgb
-Xcursor.size  : 16
+XIdle.timeout:           300
+XLock.background:        #ffffff
+XLock.foreground:        #ffffff
+XLock.icongeometry:      1x1
+XLock.lockdelay:         2
 
-URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
+Xcursor.theme: dmz
+Xcursor.size: 20
 
-urxvt*foreground: white
-urxvt*background: black
+XTerm*font:              -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
+XTerm*internalBorder:    10
+XTerm*loginShell:        true
+XTerm*scrollBar:         false
+XTerm*selectToClipboard: true
 
-*color0:  #2E3436
-*color1:  #a40000
-*color2:  #4E9A06
-*color3:  #C4A000
-*color4:  #3465A4
-*color5:  #75507B
-*color6:  #ce5c00
-*color7:  #babdb9
-*color8:  #555753
-*color9:  #EF2929
-*color10: #8AE234
-*color11: #FCE94F
-*color12: #729FCF
-*color13: #AD7FA8
-*color14: #fcaf3e
-*color15: #EEEEEC
-
-URxvt.cursorBlink          : 1
-URxvt.scrollBar            : false
-URxvt.internalBorder       : 2
-URxvt.externalBorder       : 0
-URxvt.urgentOnBell         : true
-URxvt.intensityStyles      : true
-URxvt*scrollTtyOutput      : false
-URxvt*scrollWithBuffer     : true
-URxvt*scrollTtyKeypress    : true
-URxvt*saveLines            : 10000
-
-URxvt.iso14755             : false
+XTerm*background:        #141414
+XTerm*foreground:        #eeeeee
