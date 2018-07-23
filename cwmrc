@@ -1,3 +1,4 @@
+gap			2 0 0 0
 bind-key M-Return       terminal
 bind-key M-e            menu-cmd
 bind-key M-j            window-cycle
@@ -37,7 +38,7 @@ sticky   yes
 command  calc           "xcalc"
 command  chrome         "chrome"
 command  console        "xconsole"
-command  firefox        "firefox"
+command  iridum 	"iridium"
 command  gimp           "gimp"
 command  office         "libreoffice"
 command  paint          "mtpaint"
