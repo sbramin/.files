@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'justmao945/vim-clang'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
@@ -9,13 +9,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'tomasr/molokai'
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 call plug#end()
 
 
 
 set nocompatible
+
+let g:python_host_prog = '/usr/bin/python2.7'
+let g:python3_host_prog = '/usr/bin/python3.6'
+
+let g:deoplete#enable_at_startup = 1
 
 filetype off
 filetype plugin indent on
@@ -56,7 +61,6 @@ set viminfo='200
 
 set lazyredraw          " Wait to redraw
 
-let g:deoplete#enable_at_startup = 1
 
 if has('persistent_undo')
   set undofile

@@ -129,3 +129,5 @@ yclean() {
 #        | sed "s/Error/${red}Error${normal}/g" \
 #        | sed "s/CrashLoopBackOff/${red}CrashLoopBackOff${normal}/g"
 #}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
