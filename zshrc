@@ -10,7 +10,7 @@ fi
 
 source ~/.zsh_private
 
-export EDITOR="vim"
+export EDITOR="nvim"
 
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
@@ -28,7 +28,8 @@ source $ZSH/oh-my-zsh.sh
 export MOZ_ALLOW_GTK_DARK_THEME=true
 
 alias k=kubectl
-alias nano=vim
+alias nano=nvim
+alias vim=nvim
 
 agp () {
 	echo $AWS_DEFAULT_PROFILE
@@ -89,8 +90,8 @@ local k8s_info='k8s:$fg[cyan]`grep current ~/.kube/config | cut -d " " -f 2`'
 #%{$fg[white]%}[%*] $exit_code
 #%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 
-export KUBE_EDITOR="vim"
-export VISUAL="vim"
+export KUBE_EDITOR="nvim"
+export VISUAL="nvim"
 
 #eval $(thefuck --alias)
 
