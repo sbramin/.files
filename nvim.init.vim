@@ -17,8 +17,8 @@ call plug#end()
 
 set nocompatible
 
-let g:python_host_prog = '/usr/bin/python2.7'
-let g:python3_host_prog = '/usr/bin/python3.6'
+let g:python_host_prog = '/usr/local/bin/python2.7'
+let g:python3_host_prog = '/usr/local/bin/python3.6'
 
 let g:deoplete#enable_at_startup = 1
 
