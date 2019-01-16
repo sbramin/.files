@@ -9,8 +9,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'tomasr/molokai'
-Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 
