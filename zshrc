@@ -10,7 +10,7 @@ fi
 
 source ~/.zsh_private
 
-export EDITOR="nvim"
+export EDITOR="vim"
 
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
@@ -28,8 +28,8 @@ source $ZSH/oh-my-zsh.sh
 export MOZ_ALLOW_GTK_DARK_THEME=true
 
 alias k=kubectl
-alias nano=nvim
-alias vim=nvim
+alias nano=vim
+alias vim=vim
 
 agp () {
 	echo $AWS_DEFAULT_PROFILE

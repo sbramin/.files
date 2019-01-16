@@ -3,11 +3,14 @@ XLock.background:        #ffffff
 XLock.foreground:        #ffffff
 XLock.icongeometry:      1x1
 XLock.lockdelay:         2
-
 Xcursor.theme: dmz
 Xcursor.size: 20
 
-XTerm*font:              -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
+
+XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
+XTerm.vt100.faceSize: 12
+
+
 XTerm*internalBorder:    10
 XTerm*loginShell:        true
 XTerm*scrollBar:         false

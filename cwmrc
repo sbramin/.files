@@ -1,5 +1,6 @@
 #gap			2 0 0 0
-bind-key M-Return       "alacritty -e tmux -2"
+bind-key M-Return       "xterm -e tmux -2"
+#bind-key M-Return       "alacritty -e tmux -2"
 bind-key M-e            menu-cmd
 bind-key M-j            window-cycle
 bind-key M-k            window-cycle
