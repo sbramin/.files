@@ -9,8 +9,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'tomasr/molokai'
+Plug 'rakr/vim-one'
 Plug 'roxma/nvim-yarp'
 Plug 'Valloric/YouCompleteMe'
+Plug 'andrewstuart/vim-kubernetes'
 call plug#end()
 
 
@@ -65,13 +67,12 @@ endif
 
 let mapleader = ","
 set encoding=utf-8
-let g:rehash256 = 1
 
 syntax enable
 set t_Co=256
 
 let g:rehash256 = 1
-set background=dark
+"set background=dark
 let g:molokai_original = 1
 colorscheme molokai
 
@@ -328,3 +329,4 @@ au InsertEnter * exec "inoremap <silent> " . g:UltiSnipsJumpBackwardTrigger . " 
 
 " ==================== Ag ====================
 let g:ackprg = 'ag --vimgrep --smart-case'                             
+

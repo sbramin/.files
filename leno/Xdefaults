@@ -1,8 +1,4 @@
-XIdle.timeout:           300
-XLock.background:        #ffffff
-XLock.foreground:        #ffffff
-XLock.icongeometry:      1x1
-XLock.lockdelay:         2
+XIdle.timeout:           60
 Xcursor.theme: dmz
 Xcursor.size: 20
 

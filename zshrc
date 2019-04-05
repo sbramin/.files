@@ -122,13 +122,4 @@ yclean() {
 	yaourt -Scc --noconfirm
 }
 
-# ##kgp() {
-#  kubectl get pods "$@" \
-#        | sed "s/Running/${green}Running${normal}/g" \
-#        | sed "s/Pending/${yellow}Pending${normal}/g" \
-#        | sed "s/Completed/${blue}Completed${normal}/g" \
-#        | sed "s/Error/${red}Error${normal}/g" \
-#        | sed "s/CrashLoopBackOff/${red}CrashLoopBackOff${normal}/g"
-#}
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
