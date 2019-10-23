@@ -15,7 +15,7 @@ export EDITOR="vim"
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$HOME/bin:$GOBIN:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:$HOME/bin:$GOBIN:$PATH:/home/sramin/.cargo/bin:$HOME/.local/bin"
 
 export MONGO_CONNECTION_STRING=localhost
 #ZSH_THEME="ys"
