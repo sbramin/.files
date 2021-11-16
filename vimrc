@@ -10,11 +10,12 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'tomasr/molokai'
 Plug 'rakr/vim-one'
-Plug 'roxma/nvim-yarp'
 Plug 'Valloric/YouCompleteMe'
 Plug 'andrewstuart/vim-kubernetes'
 Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier', {
+Plug 'prettier/vim-prettier', 
+Plug 'https://dev.sanctum.geek.nz/code/vim-redact-pass.git'
+Plug 'dense-analysis/ale', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript','jsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
@@ -68,6 +69,8 @@ if has('persistent_undo')
   set undofile
   set undodir=~/.cache/vim
 endif
+
+let g:ale_linters = {'go': ['revive']}
 
 let mapleader = ","
 set encoding=utf-8
@@ -243,7 +246,7 @@ let g:go_gocode_unimported_packages = 1
 
 let g:go_autodetect_gopath = 1
 let g:go_info_mode = "guru"
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_autosave_enabled = ['vet', 'revive']
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_array_whitespace_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
