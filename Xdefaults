@@ -4,7 +4,7 @@ Xcursor.size: 20
 
 
 XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
-XTerm.vt100.faceSize: 12
+XTerm.vt100.faceSize: 8
 
 
 XTerm*internalBorder:    10

@@ -48,12 +48,10 @@ fontname fixed-13
 sticky   yes
 
 command  calc           "xcalc"
-command  chrome         "chrome"
-command  firefox "firefox -P"
+command  firefox "firefox"
 command  chat "weechat"
 command  gimp           "gimp"
 command  office         "libreoffice"
 
-autogroup 2 "chromium,Chrome"
 autogroup 3 "slack,slack"
 
